@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- Tell browser what version of HTML to render document (HTML5) -->
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8"> <!-- Display special symbols or characters correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Scaling Size -->
+    <!--* Add External Style Sheet  -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- connect slides.js -->
+    <script src="js/slides.js"></script>
+
+    <!-- Title on Tab Bar -->
+    <title>
+        Slides
+    </title>
+</head>
+
+<body onload="changeDiv()">
+    <!-- horizontal navigation bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="password.html">Password</a>
+        <a href="slides.html">Slides</a>
+        <a href="profile.html">Profile</a>
+        <a href="manipulate.html">Manipulate</a>
+    </nav>
+    <!-- header for Exercise 2: Slideshow -->
+    <h1>Exercise 2: Slideshow</h1>
+    <!-- slideshow of 5 images with previous and next button that loops, with all images being the same size -->
+    <div class="slideshow-container">
+
+        <div id="slide1">
+            <div class="numbering">1 / 5</div>
+            <img src="images/cat.png" style="width:300px; height:300px">
+        </div>
+
+        <div id="slide2">
+            <div class="numbering">2 / 5</div>
+            <img src="images/balloons.png" style="width:300px; height:300px;">
+        </div>
+
+        <div id="slide3">
+            <div class="numbering">3 / 5</div>
+            <img src="images/flower.png" style="width:300px; height:300px">
+        </div>
+
+        <div id="slide4">
+            <div class="numbering">4 / 5</div>
+            <img src="images/linux.png" style="width:300px; height:300px">
+        </div>
+
+        <div id="slide5">
+            <div class="numbering">5 / 5</div>
+            <img src="images/mario.png" style="width:300px; height:300px">
+        </div>
+
+
+        <!-- Next and previous buttons -->
+        <button class="prev" onclick="navigate(-1)">&#10094;</button>
+        <button class="next" onclick="navigate(1)">&#10095;</button>
+    </div>
+</body>
+
+</html>

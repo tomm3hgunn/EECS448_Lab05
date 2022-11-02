@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- Tell browser what version of HTML to render document (HTML5) -->
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8"> <!-- Display special symbols or characters correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Scaling Size -->
+    <!--* Add External Style Sheet  -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <!-- connect js -->
+    <script src="js/manipulate.js"></script>
+
+    <!-- Title on Tab Bar -->
+    <title>
+        Manipulate CSS
+    </title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="password.html">Password</a>
+        <a href="slides.html">Slides</a>
+        <a href="profile.html">Profile</a>
+        <a href="manipulate.html">Manipulate</a>
+    </nav>
+    <!-- header Exercise 4: Manipulate CSS -->
+    <h1>Exercise 4: Manipulate CSS</h1>
+
+    <!-- dummy text -->
+    <div id="text"></div>
+    <p id="variedtext">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc
+        tortor
+        tincidunt nunc, eget aliquam nisl nisl sit amet nunc. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla
+        facilisi. Nulla facilisi.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc
+        tortor
+        tincidunt nunc, eget aliquam nisl nisl sit amet nunc. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla
+        facilisi. Nulla facilisi.
+    </p>
+    </div>
+    <!-- 4 text fields under title Border for red, blue, green, and width -->
+    <div id="fields">
+        <div id="borderfields">
+            <h2>Border</h2>
+            <div id="borderred">
+                <label for="red">Red (0-255)</label>
+                <input type="text" id="redField" name="red" value="0">
+            </div>
+            <div id="bordergreen">
+                <label for="green">Green (0-255)</label>
+                <input type="text" id="greenField" name="green" value="0">
+            </div>
+            <div id="borderblue">
+                <label for="blue">Blue (0-255)</label>
+                <input type="text" id="blueField" name="blue" value="0">
+            </div>
+            <div id="borderwidth">
+                <label for="width">Width</label>
+                <input type="text" id="widthField" name="width" value="1">
+            </div>
+        </div>
+        <!-- 3 text fields for background color -->
+        <div id="backgroundfields">
+            <h2>Background</h2>
+            <div id="backgroundred">
+                <label for="red">Red (0-255)</label>
+                <input type="text" id="redBack" name="red" value="255">
+            </div>
+            <div id="backgroundblue">
+                <label for="blue">Blue (0-255)</label>
+                <input type="text" id="blueBack" name="blue" value="255">
+            </div>
+            <div id="backgroundgreen">
+                <label for="green">Green (0-255)</label>
+                <input type="text" id="greenBack" name="green" value="255">
+            </div>
+        </div>
+    </div>
+
+    <!-- button that will pass rgb values and width to change dummy text-->
+    <button id="button" onclick="changeText()">Change</button>
+
+
+</body>
+
+</html>
